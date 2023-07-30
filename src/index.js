@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './LoginApp';
-import './MainApp'
 import LoginForm from './LoginApp';
 import MainApp from './MainApp';
 

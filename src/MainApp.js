@@ -2,11 +2,10 @@ import Stack from 'react-bootstrap/Stack';
 import Table from 'react-bootstrap/Table';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import UserApp from './UserApp';
 import Navigation from './Navigation';
 
 
-function MainApp() {
+export default function MainApp() {
 
   return (
 
@@ -39,4 +38,5 @@ function MainApp() {
   );
 }
 
-export default MainApp;
+// const root = ReactDOM.createRoot(document.getElementById('main-app'));
+// root.render(<MainApp />);
