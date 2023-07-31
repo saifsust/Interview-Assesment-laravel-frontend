@@ -1,9 +1,12 @@
-import { Container, Table } from "react-bootstrap";
+import { ThemeProvider } from "react-bootstrap";
 
 export default function MainApp() {
 
   return (
-    <Container>
-    </Container>
+    <ThemeProvider
+      breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+      minBreakpoint="xxs"
+    >
+    </ThemeProvider>
   );
 }
