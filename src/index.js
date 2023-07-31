@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import LoginApp from './components/LoginApp';
 import UserApp from './components/UserApp';
 import BookListApp from './components/BookListApp';
+import BookMetaApp from './components/BookMetaApp';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/book-list",
     element: <BookListApp />,
+  },
+  {
+    path: "/book-meta",
+    element: <BookMetaApp />,
   }
 ]);
 
