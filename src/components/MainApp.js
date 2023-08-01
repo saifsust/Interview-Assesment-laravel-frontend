@@ -1,12 +1,20 @@
-import { ThemeProvider } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 
 export default function MainApp() {
 
   return (
-    <ThemeProvider
-      breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
-      minBreakpoint="xxs"
-    >
-    </ThemeProvider>
+    <>
+      <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">GMG Library</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/book-list">Book List</Nav.Link>
+            <Nav.Link href="/user">Users</Nav.Link>
+            <Nav.Link href="/book-meta">Book Meta</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+
+    </>
   );
 }
